@@ -1,0 +1,68 @@
+@import 'variables';
+.product-page{
+    .category-banner{
+        width: 100vw !important;
+        height: 30vw !important;
+        object-fit: scale-down !important;
+        display: flex;
+            div{
+                img{
+                    width: 30vw;
+                    max-height: 30vw;
+                    margin-left: 5rem;
+                }
+            }
+            .category-detail{
+                h1{
+                    font-family: 'Audiowide', cursive;
+                    font-size: 2rem;
+                    text-align: center;
+                    width: 65vw;
+                    margin-top: 3rem;
+                }
+                p{
+                    font-family: 'Audiowide', cursive;
+                    width: 55vw;
+                    word-wrap: break-word;
+                    margin-left: 5vw;
+                    margin-right: 5vw;
+                    margin-top: 2rem;
+                    text-align: center;
+                }
+            }
+    }
+    h1{
+        margin-top: 2rem;
+    }
+    .product-container{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100vw;
+    }
+    .container-category{
+        position: relative;
+        height: 8rem;
+        .brand-slider{
+            .product-brand{
+                width: 8rem;
+                height: 8rem;
+                border-radius: 4px;
+                object-fit: scale-down !important;
+                img{
+                    width: 8rem;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+        }
+        button{
+            height: 25%;
+            top: 35%;
+            font-size: 1rem;
+            border-radius: 4rem;
+        }
+    }
+}
+.product-display{
+    position: relative;
+}

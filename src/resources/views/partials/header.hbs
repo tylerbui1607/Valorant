@@ -1,0 +1,227 @@
+<nav class="navbar nav-header navbar-expand-lg navbar-light bg-light nav-fill row banner">
+  <div class="col-sm-2">
+    <img src="/img/brand.png" class="brand-img" />
+    <a class="navbar-brand" href="/">alorant</a>
+  </div>
+  <div class="col-sm-8">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <div class="category-dropdown">
+            <a class="nav-link" href="/products">PRODUCTS</a>
+            <div class="product-dropdown-content bg-light" >
+              <a href="/products/chair" class="nav-link">Chair &amp Sofa</a>
+              <a href="/products/decor" class="nav-link">Decoration</a>
+              <a href="/products/table" class="nav-link">Table</a>
+              <a href="/products/bed" class="nav-link">Bed</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">COLLECTION</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">ABOUT US</a>
+        </li>
+      </ul>
+
+      <form class="navbar-nav search-product" method="get">
+        <input type="text" class="search-product-text" placeholder="Search" name="name">
+        <button title="Search" class="search-product-button" value="" type="button">
+           <i class="fas fa-search"></i>
+        </button>
+      </form>       
+    </div>
+  </div>
+  
+  <div style="margin-right: 1rem">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown account-info">
+        <div class="category-dropdown">
+          <button class="nav-link account-name">ACCOUNT</button>
+          <div class="dropdown-content bg-light">
+            <a href="#" class="nav-link">Profile</a>
+            <a href="/customer/orders" class="nav-link">Your order</a>
+            <button class="nav-link logout-btn">Logout</button>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item login-info">
+        <button id="login-btn">
+          Login
+        </button>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div style="display: block; height: calc(3.5rem);" class="nav-header-space">
+</div>
+<div class="login-popup">
+  <div class="login-form">
+    <div class="filter">
+      <div class="icon">
+        <div class="image">
+          <img src="/img/logolog.png">
+        </div>
+        <h1>
+          Welcome<br> to Valorant
+        </h1>
+        <h2>
+          Find the best furniture for <br> your home!
+        </h2>
+      </div>
+      <div class="login-input">
+        <button id="close-login-btn">X</button>
+        <div class="header">
+          Sign up <span style="color: rgb(32, 138, 165);">/ Login</span>
+        </div>
+        <div class="login-sign-up">
+          <div class="sign-up">
+            <div class="signup-title">
+              We will need...
+            </div>
+            <form action="post">
+              <div class="input-container">
+                <input type="text" name="uName" id="uName" placeholder="Your name">
+                <i class="far fa-smile-wink signup-icon"></i>
+                <p class="wrong-input-message">Please give us your name!</p>
+              </div>
+              <div class="input-container">
+                <input type="text" name="uAddress" id="uAddress" placeholder="Address">
+                <i class="far fa-paper-plane signup-icon"></i>
+                <p class="wrong-input-message">Please give us your address!</p>
+              </div>
+              <div class="input-container">
+                <input type="number" name="uPnumber" id="uPnumber" placeholder="Phonenumber">
+                <i class="far fa-comments signup-icon"></i>
+                <p class="wrong-input-message">Please give us your phonenumber!</p>
+              </div>
+              <div class="input-container">
+                <input type="text" name="uUsername" id="uUsername" placeholder="Username">
+                <i class="far fa-user signup-icon"></i>
+                <p class="wrong-input-message">Please give us your username!</p>
+              </div>
+              <div class="input-container">
+                <input type="password" name="uPassword" id="uPassword" placeholder="Password">
+                <i class="far fa-keyboard signup-icon"></i>
+                <p class="wrong-input-message">Please give us your password!</p>
+              </div>
+              <input type="button" id="signup-btn" value="Sign up">
+            </form>
+          </div>
+          <div class="ver-line">
+            <div></div>
+            <h2>
+              Or
+            </h2>
+            <div></div>
+          </div>
+          <div class="login">
+            <div class="login-title">
+              Also you can...
+            </div>
+            <form action="post">
+              <div class="input-container">
+                <input type="text" name="Username" id="Username" placeholder="Username">
+                <i class="far fa-user login-icon"></i>
+              </div>
+              <p class="wrong-input-message">Please give us your username!</p>
+              <div class="input-container">
+                <input type="password" name="Password" id="Password" placeholder="Password">
+                <i class="far fa-keyboard login-icon"></i>
+              </div>
+              <p class="wrong-input-message">Please give us your password!</p>
+              <div class="input-container">
+                <input id="login-submit" type="button" value="Login">
+                <p class="wrong-input-message" style="text-align: center; width: 100%;">Wrong username or password!</p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="cart-popup">
+  <div class="cart-action">
+    <div class="cart-form">
+      <div class="shopping-title cart-show">Shopping cart</div>
+      <div class="cart-item" id="cartItem">
+      </div>
+      <div class="cart-total">
+      </div>
+      <button id="checkout-btn">Checkout</button>
+    </div>
+    <div class="cart-checkout">
+      <div class="checkout-form">
+        <div class="shopping-title">
+          Order information
+        </div>
+        <div class="message-container">
+          <label for="cusname">Name:</label><br>
+          <p class="wrong-cart-message">Please enter name!</p>
+        </div>
+        <input type="text" name="cusname" id="cusname">
+        <div class="message-container">
+          <label for="cusaddress">Address:</label><br>
+          <p class="wrong-cart-message">Please enter address!</p>
+        </div>
+        <input type="text" name="cusaddress" id="cusaddress">
+        <div class="message-container">
+          <label for="cusphone">Phonenumber:</label><br>
+          <p class="wrong-cart-message">Please enter phonenumber!</p>
+        </div>
+        <input type="number" name="cusphone" id="cusphone">
+        <label for="note">Note:</label><br>
+        <input type="text" name="note" id="note">
+        <label for="paymenttype">Type of payment:</label><br>
+        <div>
+          <input type="radio" name="type" id="otpay" value="2" checked="true">
+          <label for="otpay">One-time payments</label><br>
+          <input type="radio" name="type" id="inspay" value="1">
+          <label for="inspay">Installment payment</label>
+        </div>
+        <div style="display: flex; justify-content: space-between">
+          <label>Provisional cost:</label>
+          <label class="provisional-cost">$50</label>
+        </div>
+        <div style="display: flex; justify-content: space-between">
+          <label>Transportation cost:</label>
+          <label class="transportation-cost">$50</label>
+        </div>
+        <div style="display: flex; justify-content: space-between">
+          <label>Total:</label>
+          <label class="total-cost">$9350</label>
+        </div>
+        <button id="order-btn">Order</button>
+      </div>
+      <div class="ver-line"></div>
+    </div>
+  </div>
+</div>
+<div class="cart">
+  <button id="cart-btn-2">
+    <i class="fas fa-shopping-cart"></i>
+  </button>
+  <div class="cart-nitem">0</div>
+</div>
+<div class="message-popup">
+  <div class="message show">
+    <div class="icon">
+      <i class="far fa-check-circle"></i>
+    </div>
+    <div class="title">Congrats!</div>
+    <div class="content">Adding product successfully!</div>
+    <button class="next-btn">OK</button>
+  </div>
+  <div class="waiting show">
+    <div class="gif">
+      <img src="/img/waiting.gif">
+    </div>
+    <div class="title">Please wait</div>
+  </div>
+</div>

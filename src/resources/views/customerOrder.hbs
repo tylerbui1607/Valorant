@@ -1,0 +1,203 @@
+<div class="setting-section sale-section" style="display: block;">
+    <div class="sale-status">
+        <div class="status-title">
+            Sale management
+        </div>
+        <table>
+            <tr>
+                <th class="id-field">
+                    <div class="table-header">
+                        <div>
+                            ID
+                        </div>
+                        <div>
+                            <button class="sort-btn">
+                                <i class="fas fa-sort-up"></i>
+                            </button>
+                        </div>
+                    </div>
+                </th>
+                <th class="cname-field">
+                    <div class="table-header">
+                        <div>
+                            Customer name
+                        </div>
+                        <div>
+                            <button class="sort-btn">
+                                <i class="fas fa-sort-up"></i>
+                            </button>
+                        </div>
+                    </div>
+                </th>
+                <th class="date-field">
+                    <div class="table-header">
+                        <div>
+                            Date create
+                        </div>
+                        <div>
+                            <button class="sort-btn">
+                                <span style="color: rgb(175, 175, 175);">
+                                    <i class="fas fa-sort"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </th>
+                <th class="tprice-field">
+                    <div class="table-header">
+                        <div>
+                            Total price
+                        </div>
+                        <div>
+                            <button class="sort-btn">
+                                <span style="color: rgb(175, 175, 175);">
+                                    <i class="fas fa-sort"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </th>
+                <th class="status-field">
+                    <div class="table-header">
+                        <div>
+                            Status
+                        </div>
+                        <div>
+                            <button class="sort-btn">
+                                <span style="color: rgb(175, 175, 175);">
+                                    <i class="fas fa-sort"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </th>
+                <th class="note-field">
+                    <div class="table-header">
+                        <div>
+                            Note
+                        </div>
+                        <div>
+                            <button class="sort-btn">
+                                <span style="color: rgb(175, 175, 175);">
+                                    <i class="fas fa-sort"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </th>
+                <th class="action-field">
+                    <div class="table-header">
+                        <div>
+                            Action
+                        </div>
+                        <div>
+                            <button class="sort-btn">
+                                <span style="color: rgb(175, 175, 175);">
+                                    <i class="fas fa-sort"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </th>
+            </tr>
+        </table>
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th class="id-field"></th>
+                    <th class="cname-field"></th>
+                    <th class="date-field"></th>
+                    <th class="tprice-field"></th>
+                    <th class="status-field"></th>
+                    <th class="note-field"></th>
+                    <th class="action-field"></th>
+                </tr>
+                {{#each data.orders}}
+                <tr class="order-data" orderid="{{this._id}}">
+                    <td class="infoid">{{this.id}}</td>
+                    <td class="infoname">{{this.customer_name}}</td>
+                    <td class="infodate">{{this.order_date}}</td>
+                    <td class="infotprice">{{this.totalprice}}</td>
+                    <td class="infostatus">{{this.status}}</td>
+                    <td class="infostaffid">{{this.note}}</td>
+                    <td>
+                        <div class="action">
+                            <button class="action-btn btn-edit">
+                                <i class="far fa-edit"></i>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+                {{/each}}
+            </table>
+        </div>
+    </div>
+</div>
+<div class="edit-sale-popup" orderid="1">
+    <div class="edit-sale-form">
+        <div class="order-info">
+            <div class="edit-sale-container">
+                <button class="close-edit-btn">X</button>
+                <form method="POST">
+                    <label for="orcname">Customer's name:</label><br>
+                    <input type="text" disabled="true" id="orcname" name="orcname"><br>
+                    <label for="orcaddress">Address:</label><br>
+                    <input type="text" id="orcaddress" name="orcaddress"><br>
+                    <label for="orcpnumber">Phonenumber:</label><br>
+                    <input type="number" id="orcpnumber" name="orcpnumber"><br>
+                    <div class="subinfo-container">
+                        <div class="order-date">
+                            <label for="orderdate">Order date:</label><br>
+                            <input disabled="true" type="text" id="orderdate" name="orderdate"><br>
+                            <label for="orstatus">Status:</label><br>
+                            <select name="orstatus" id="orstatus" disabled="true">
+                                <option value="Pending">Pending</option>
+                                <option value="Expired">Expired</option>
+                                <option value="Complete">Complete</option>
+                                <option value="Cancel">Cancel</option>
+                            </select><br>
+                            <input type="button" class="submit-edit-btn edit-order-submit" value="Submit">
+                            <input type="button" class="submit-edit-btn edit-order-cancel" style="background-color: rgb(255, 193, 193);" value="Cancel order">
+                        </div>
+                        <div class="order-note">
+                            <label for="ordernote">Note:</label><br>
+                            <textarea disabled="true" type="text" id="ordernote" name="ordernote"></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="product-list">
+            <label>List products:</label><br>
+            <table class="table-header">
+                <tr>
+                    <th class="product-name">
+                        Product's name
+                    </th>
+                    <th class="order-number"> 
+                        Number
+                    </th>
+                    <th class="product-price">
+                        Price
+                    </th>
+                </tr>
+            </table>
+            <div class="table-container-b">
+                <table class="table-data">
+                </table>
+            </div>
+            <table class="table-footer">
+                <tr>
+                    <th class="product-name">
+                        Total
+                    </th>
+                    <th class="order-number"> 
+                    </th>
+                    <th class="total-price">
+                        5000
+                    </th>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

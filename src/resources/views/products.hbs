@@ -1,0 +1,24 @@
+<h1 class="title">
+    ALL PRODUCTS
+</h1>
+<div class="product-display">
+    <div class="product-container flex">
+        {{#each data.products}}
+        <div class="product-card" pid = "{{this._id}}" num = "{{this.number}}">
+            <div class="product-img">
+                <img src="{{this.image}}">
+            </div>
+            <a href="#" class="product-name">
+                {{this.name}}
+            </a>
+            <p class="product-price">
+                ${{this.price}}
+            </p>
+            <button href="#" class="btn-addcart">
+                Add to cart 
+            </button>
+        </div>
+        {{/each}}
+    </div>
+</div>
+<div class="line"></div>

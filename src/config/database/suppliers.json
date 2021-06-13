@@ -1,0 +1,57 @@
+[{
+  "_id": {
+    "$oid": "5fb325aa585cdd6150daa230"
+  },
+  "name": "Mountain woods",
+  "image": "/img/logo_61.png",
+  "address": "TNR-Tower, 54 Nguyen Chi Thanh, Dong Da, Ha Noi.",
+  "phonenumber": "0357857086"
+},{
+  "_id": {
+    "$oid": "5fb325aa585cdd6150daa291"
+  },
+  "name": "Matsu",
+  "image": "/img/logo_151.png",
+  "address": "Waseco Building, 10 Pho Quang, Tan Binh, Ho Chi Minh",
+  "phonenumber": "0392808994"
+},{
+  "_id": {
+    "$oid": "5fb325aa585cdd6150daa292"
+  },
+  "name": "Fujimid",
+  "image": "/img/logo_101.png",
+  "address": "72 Le Thanh Ton, Ben Nghe, Ho Chi Minh",
+  "phonenumber": "0376148123"
+},{
+  "_id": {
+    "$oid": "5fb325aa585cdd6150daa293"
+  },
+  "name": "Warthog",
+  "image": "/img/logo_71.png",
+  "address": "221B Baker Street, London",
+  "phonenumber": "8718901902"
+},{
+  "_id": {
+    "$oid": "5fb325aa585cdd6150daa294"
+  },
+  "name": "UNTD",
+  "image": "/img/logo_161.png",
+  "address": "12 Grimmauld Place, Hogwarts",
+  "phonenumber": "9871635212"
+},{
+  "_id": {
+    "$oid": "5fb325aa585cdd6150daa295"
+  },
+  "name": "UNC",
+  "image": "/img/logo_5.png",
+  "address": "Blandings Castle, Shropshire",
+  "phonenumber": "0987527181"
+},{
+  "_id": {
+    "$oid": "5fb325aa585cdd6150daa296"
+  },
+  "name": "Santa Blanca",
+  "image": "/img/logo_131.png",
+  "address": "Apt. 56B, Whitehaven Mansions",
+  "phonenumber": "0972537131"
+}]

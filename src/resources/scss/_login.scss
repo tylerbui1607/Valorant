@@ -1,0 +1,258 @@
+.login-popup{
+    position: fixed; /* Stay in place */
+    left: 0;
+    top: 0;
+    display: none;
+    z-index: 20; /* Sit on top */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+}
+.login-form{
+    width: 78vw;
+    height: 85vh;
+    position: relative;
+    border-radius: 0.5rem; /* Black w/ opacity */
+    background-image: url('/img/login.jpg');
+    background-size: contain;
+    margin: auto;
+    margin-top: calc((100vh - 85vh)/2);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+  .show{
+    animation-name: animatetop;
+    animation-duration: 0.8s;
+  }
+  .hide{
+    animation-name: animatehide;
+    animation-duration: 0.8s;
+  }
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-95vh; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-95vh; opacity:0}
+    to {top:0; opacity:1}
+  }
+  @keyframes animatehide {
+    from {top:0px; opacity:0}
+    to {top:-95vh; opacity:1}
+  }
+.filter{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(48, 48, 53, 0.6);
+    border-radius: 0.5rem;
+    display: flex;
+}
+.icon{
+    width: 33%;
+    .image{
+        width: 6rem;
+        height: 6rem;
+        margin-top: 3rem;
+        padding-top: 0.5rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        background: white;
+        clip-path: polygon(92.32051% 40%, 93.79385% 43.1596%, 94.69616% 46.52704%, 95% 50%, 94.69616% 53.47296%, 93.79385% 56.8404%, 92.32051% 60%, 79.82051% 81.65064%, 77.82089% 84.50639%, 75.35575% 86.97152%, 72.5% 88.97114%, 69.3404% 90.44449%, 65.97296% 91.34679%, 62.5% 91.65064%, 37.5% 91.65064%, 34.02704% 91.34679%, 30.6596% 90.44449%, 27.5% 88.97114%, 24.64425% 86.97152%, 22.17911% 84.50639%, 20.17949% 81.65064%, 7.67949% 60%, 6.20615% 56.8404%, 5.30384% 53.47296%, 5% 50%, 5.30384% 46.52704%, 6.20615% 43.1596%, 7.67949% 40%, 20.17949% 18.34936%, 22.17911% 15.49361%, 24.64425% 13.02848%, 27.5% 11.02886%, 30.6596% 9.55551%, 34.02704% 8.65321%, 37.5% 8.34936%, 62.5% 8.34936%, 65.97296% 8.65321%, 69.3404% 9.55551%, 72.5% 11.02886%, 75.35575% 13.02848%, 77.82089% 15.49361%, 79.82051% 18.34936%);
+        img{
+            width: 5rem;
+            height: 5rem; 
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+
+        }
+    }
+    h1{
+        margin-top: 1rem;
+        color: white;
+        font-size: 1rem;
+    }
+    h2{
+        margin-top: 2rem;
+        color: white;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 400;
+        text-align: center;
+    }
+}
+.login-input{
+    position: relative;
+    width: 67%;
+    height: 100%;
+    z-index: 2;
+    border-radius: 0.5rem;
+    margin-left: auto;
+    background-color: white;
+    button{
+        position: absolute;
+        right: 0.5rem;
+        top: 0.5rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        font-family: $default-font;
+        border: none;
+        outline: none;
+        background: whitesmoke;
+        border-radius: 10rem;
+        color: rgb(170, 170, 170);
+    }
+    button:hover{
+        background-color: rgb(243, 192, 162);
+        color: white;
+    }
+    .header{
+        font-family: $default-font;
+        margin-top: 2rem;
+        margin-left: 2rem;
+    }
+    .wrong-input{
+        border-bottom: rgb(231, 128, 128) solid 2px !important;
+    }
+    .wrong-icon{
+        color : rgb(231, 128, 128) !important;
+    }
+    .login-sign-up{
+        display: flex;
+        height: 80%;
+        width: 100%;
+        margin-top: 3rem;
+        .login{
+            margin-left: 1rem;
+            margin-right: 1rem;
+            width: 47%;
+            .login-title{
+                font-family: $default-font;
+                color: rgb(106, 110, 110);
+            }
+            form{
+                margin-top: 3rem;
+                .input-container{
+                    position: relative;
+                    i{
+                        position: absolute;
+                        padding-top: 0.5rem;
+                        font-size: 1.5rem;
+                        font-weight: 400;
+                        top: 2.5rem;
+                        left: 82%;
+                        color: rgb(164, 175, 214);;
+                    }
+                }
+                input[type = "text"],input[type = "password"] {
+                    margin-top: 3rem;
+                    width: 90%;
+                    font-family: sans-serif;
+                    border: none;
+                    outline: none;
+                    border-bottom: 1px solid rgb(164, 175, 214);
+                    color: rgb(164, 175, 214);
+                }
+
+                input[type = "text"]:focus,input[type = "password"]:focus{
+                    color: rgb(164, 175, 214);
+                    border-bottom: 2px solid rgb(164, 175, 214);
+                }
+                input[type = "button"]{
+                    outline: none;
+                    margin-left: auto;
+                    margin-top: 3rem;
+                    width: 6rem;
+                    height: 2rem;
+                    display: block;
+                    margin-right: auto;
+                    border: none;
+                    border-radius: 0.5rem;
+                    background: rgb(134, 193, 233);
+                    font-weight: 500;
+                    color: white;
+                }
+            }
+        }
+        .sign-up{
+            width: 47%;
+            margin-left: 2rem;
+            .signup-title{
+                font-family: $default-font;
+                color: rgb(110, 106, 110);
+            }
+            form{
+                .input-container{
+                    position: relative;
+                    i{
+                        position: absolute;
+                        padding-top: 0.5rem;
+                        font-size: 1.5rem;
+                        font-weight: 400;
+                        top: 1.5rem;
+                        left: 82%;
+                        color: rgb(164, 175, 214);;
+                    }
+                }
+                input[type = "text"],input[type = number],input[type = "password"] {
+                    margin-top: 2rem;
+                    width: 90%;
+                    font-family: sans-serif;
+                    border: none;
+                    outline: none;
+                    border-bottom: 1px solid rgb(164, 175, 214);
+                    color: rgb(164, 175, 214);
+                }
+                input[type = number]::-webkit-inner-spin-button, 
+                input[type = number]::-webkit-outer-spin-button{
+                    -webkit-appearance: none;
+                    margin: 0;
+                }
+                input[type = "text"]:focus, input[type = "number"]:focus, input[type = "password"]:focus{
+                    color: rgb(164, 175, 214);
+                    font-size: 500;
+                    border-bottom: 2px solid rgb(164, 175, 214);
+                }
+                input[type = "button"]{
+                    margin-left: auto;
+                    outline: none;
+                    margin-top: 2.5rem;
+                    width: 6rem;
+                    height: 2rem;
+                    display: block;
+                    margin-right: auto;
+                    border: none;
+                    border-radius: 0.5rem;
+                    background: rgb(134, 233, 225);
+                    font-weight: 500;
+                    color: white;
+                }
+            }
+        }
+        .ver-line{
+            width: 6%;
+            height: 100%;
+            div{
+                width: 1px;
+                border-radius: 1rem;
+                background: rgb(32, 151, 180);
+                border: none;
+                height: 40%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            h2{
+                display: block;
+                margin-top: 0.5rem;
+                margin-left: 0.5rem;
+                font-size: 1rem;
+                font-weight: 400;
+                color: rgb(113, 118, 119);
+                font-family: $default-font;
+            }
+        }
+    }
+}

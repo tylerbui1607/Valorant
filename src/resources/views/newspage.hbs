@@ -1,0 +1,19 @@
+
+<div class="product-container flex">
+    {{#each products}}
+        <div class="product-card">
+            <div class="product-img">
+                <img src="{{this.image}}">
+            </div>
+            <a href="#" class="product-name">
+                {{this.name}} 
+            </a>
+            <p class="product-price">
+                {{this.price}}
+            </p>
+            <a href="#" class="btn-addcart">
+                Add to cart 
+            </a>
+        </div>
+    {{/each}}
+</div>

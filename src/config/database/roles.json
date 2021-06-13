@@ -1,0 +1,31 @@
+[{
+  "_id": {
+    "$oid": "5fda0f3eaed0f23b2317b726"
+  },
+  "id": 0,
+  "name": "Manager"
+},{
+  "_id": {
+    "$oid": "5fda0f51aed0f23b2317b727"
+  },
+  "id": 1,
+  "name": "Sale"
+},{
+  "_id": {
+    "$oid": "5fda0f65aed0f23b2317b728"
+  },
+  "id": 2,
+  "name": "Technical"
+},{
+  "_id": {
+    "$oid": "5fda0fa5aed0f23b2317b729"
+  },
+  "id": 3,
+  "name": "Delivery"
+},{
+  "_id": {
+    "$oid": "5fda0fb7aed0f23b2317b72a"
+  },
+  "id": 4,
+  "name": "Customer"
+}]

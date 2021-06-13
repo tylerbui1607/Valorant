@@ -1,0 +1,1397 @@
+.income-status {
+  display: flex;
+  width: 98vw;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.income-container {
+  width: 24%;
+  height: 5rem;
+  background: rgb(255, 255, 255);
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.income-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.income-detail-value {
+  font-family: $default-font;
+}
+.income-detail-name {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.income-icon {
+  font-size: 2.5rem;
+  margin-top: 0.3rem;
+  color: #5f5b5b;
+}
+.setting-container {
+  position: relative;
+}
+.product-section {
+  display: flex;
+}
+.supplier-section {
+  display: flex;
+}
+.staff-section {
+  display: flex;
+  z-index: 2;
+}
+.sale-section {
+  display: flex;
+  z-index: 2;
+}
+.warranty-section {
+  display: flex;
+  z-index: 2;
+}
+.setting-section {
+  //    position: absolute;
+  display: none;
+  width: 100%;
+  top: 0;
+}
+.add-product-container,
+.add-supplier-container,
+.add-staff-container {
+  width: 23.5vw;
+  height: 29.7rem;
+  margin-left: 1vw;
+  border-radius: 0.5rem;
+  background: rgb(255, 255, 255);
+  form {
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    label {
+      margin-top: 0.5rem;
+      margin-bottom: 0;
+    }
+    #pname,
+    #price,
+    #number,
+    #supplier,
+    #sname,
+    #spnumber,
+    #saddress,
+    #stname,
+    #staddress,
+    .form-input {
+      width: 100%;
+      height: 1.8rem;
+      outline: none;
+      border: solid 1px #616161;
+      border-radius: 0.125rem;
+      color: #616161;
+    }
+    .input-container {
+      position: relative;
+    }
+    .submit-btn {
+      border-radius: 0.25rem;
+      width: 48%;
+      text-align: center;
+      background: rgb(116, 216, 186);
+      border: none;
+      outline: none;
+      color: white;
+      height: 2rem;
+      margin-top: 0.5rem;
+    }
+    .reset-btn {
+      border-radius: 0.25rem;
+      width: 48%;
+      text-align: center;
+      background: rgb(216, 164, 116);
+      border: none;
+      outline: none;
+      color: white;
+      height: 2rem;
+      margin-top: 0.5rem;
+    }
+  }
+}
+.table-container::-webkit-scrollbar {
+  display: none;
+}
+.table-container {
+  height: 25rem;
+  overflow-y: scroll;
+}
+.product-status {
+  width: 73.1vw;
+  margin-left: auto;
+  margin-right: 1vw;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  background: rgb(255, 255, 255);
+  color: #333333;
+  table {
+    margin-top: 1rem;
+    width: 100%;
+    tr {
+      width: 100%;
+      .table-header {
+        display: flex;
+
+        .sort-btn {
+          width: auto;
+          height: auto;
+          background: none;
+          border: none;
+          outline: none;
+        }
+      }
+      td:first-child,
+      th:first-child {
+        padding-left: 0.5rem;
+      }
+      td {
+        border-top: solid 2px rgb(247, 247, 247);
+        color: #616161;
+        height: 3rem;
+        .instock {
+          width: 7rem;
+          height: 1.8rem;
+          border-radius: 1rem;
+          border: none;
+          background: rgb(116, 216, 186);
+          color: white;
+          text-align: center;
+        }
+        .outstock {
+          width: 7rem;
+          height: 1.8rem;
+          border-radius: 1rem;
+          border: none;
+          background: rgb(219, 215, 149);
+          color: white;
+          text-align: center;
+        }
+        .suspension {
+          width: 7rem;
+          height: 1.8rem;
+          border-radius: 1rem;
+          border: none;
+          background: rgb(250, 165, 165);
+          color: white;
+          text-align: center;
+        }
+        .action {
+          display: flex;
+          .action-btn {
+            width: auto;
+            height: auto;
+            background: none;
+            border: none;
+            outline: none;
+          }
+          .btn-delete {
+            color: rgb(228, 79, 79);
+          }
+          .btn-edit {
+            color: rgb(83, 216, 183);
+          }
+        }
+      }
+      .id-field {
+        width: 10%;
+      }
+      .name-field {
+        width: 25%;
+      }
+      .action-field {
+        width: 15%;
+      }
+      .type-field {
+        width: 15%;
+      }
+      .status-field {
+        width: 20%;
+      }
+      .price-field {
+        width: 15%;
+      }
+    }
+  }
+}
+.supplier-status {
+  width: 73.1vw;
+  margin-left: auto;
+  margin-right: 1vw;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  background: rgb(255, 255, 255);
+  color: #333333;
+  table {
+    margin-top: 1rem;
+    width: 100%;
+    tr {
+      width: 100%;
+      .table-header {
+        display: flex;
+
+        .sort-btn {
+          width: auto;
+          height: auto;
+          background: none;
+          border: none;
+          outline: none;
+        }
+      }
+      td:first-child,
+      th:first-child {
+        padding-left: 0.5rem;
+      }
+      td {
+        border-top: solid 2px rgb(247, 247, 247);
+        color: #616161;
+        height: 3rem;
+        .action {
+          display: flex;
+          .action-btn {
+            width: auto;
+            height: auto;
+            background: none;
+            border: none;
+            outline: none;
+          }
+          .btn-delete {
+            color: rgb(228, 79, 79);
+          }
+          .btn-edit {
+            color: rgb(83, 216, 183);
+          }
+        }
+      }
+      .id-field {
+        width: 10%;
+      }
+      .name-field {
+        width: 15%;
+      }
+      .address-field {
+        width: 45%;
+      }
+      .pnumber-field {
+        width: 20%;
+      }
+      .action-field {
+        width: 10%;
+      }
+    }
+  }
+}
+.staff-status {
+  width: 73.1vw;
+  margin-left: auto;
+  margin-right: 1vw;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  background: rgb(255, 255, 255);
+  color: #333333;
+  table {
+    margin-top: 1rem;
+    width: 100%;
+    tr {
+      width: 100%;
+      .table-header {
+        display: flex;
+
+        .sort-btn {
+          width: auto;
+          height: auto;
+          background: none;
+          border: none;
+          outline: none;
+        }
+      }
+      td:first-child,
+      th:first-child {
+        padding-left: 0.5rem;
+      }
+      td {
+        border-top: solid 2px rgb(247, 247, 247);
+        color: #616161;
+        height: 3rem;
+        .working {
+          width: 6rem;
+          height: 1.8rem;
+          border-radius: 1rem;
+          border: none;
+          background: rgb(116, 216, 186);
+          color: white;
+          text-align: center;
+        }
+        .quit {
+          width: 6rem;
+          height: 1.8rem;
+          border-radius: 1rem;
+          border: none;
+          background: rgb(250, 165, 165);
+          color: white;
+          text-align: center;
+        }
+        .action {
+          display: flex;
+          .action-btn {
+            width: auto;
+            height: auto;
+            background: none;
+            border: none;
+            outline: none;
+          }
+          .btn-delete {
+            color: rgb(228, 79, 79);
+          }
+          .btn-edit {
+            color: rgb(83, 216, 183);
+          }
+        }
+      }
+      .id-field {
+        width: 10%;
+      }
+      .name-field {
+        width: 25%;
+      }
+      .type-field {
+        width: 20%;
+      }
+      .pnumber-field {
+        width: 20%;
+      }
+      .status-field {
+        width: 15%;
+      }
+      .action-field {
+        width: 10%;
+      }
+    }
+  }
+}
+.sale-status {
+  width: 98vw;
+  margin-left: auto;
+  margin-right: 1vw;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  background: rgb(255, 255, 255);
+  color: #333333;
+  table {
+    margin-top: 1rem;
+    width: 100%;
+    tr {
+      width: 100%;
+      .table-header {
+        display: flex;
+
+        .sort-btn {
+          width: auto;
+          height: auto;
+          background: none;
+          border: none;
+          outline: none;
+        }
+      }
+      td:first-child,
+      th:first-child {
+        padding-left: 0.5rem;
+      }
+      td {
+        border-top: solid 2px rgb(247, 247, 247);
+        color: #616161;
+        height: 3rem;
+        .action {
+          display: flex;
+          .action-btn {
+            width: auto;
+            height: auto;
+            background: none;
+            border: none;
+            outline: none;
+          }
+          .btn-delete {
+            color: rgb(228, 79, 79);
+          }
+          .btn-edit {
+            color: rgb(83, 216, 183);
+          }
+        }
+      }
+      .id-field {
+        width: 5%;
+      }
+      .cname-field {
+        width: 20%;
+      }
+      .date-field {
+        width: 15%;
+      }
+      .tprice-field {
+        width: 10%;
+      }
+      .status-field {
+        width: 10%;
+      }
+      .note-field {
+        width: 30%;
+      }
+      .action-field {
+        width: 10%;
+      }
+    }
+  }
+}
+
+.instalment-status {
+  width: 98vw;
+  margin-left: auto;
+  margin-right: 1vw;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  background: rgb(255, 255, 255);
+  color: #333333;
+  table {
+    margin-top: 1rem;
+    width: 100%;
+    tr {
+      width: 100%;
+      .table-header {
+        display: flex;
+
+        .sort-btn {
+          width: auto;
+          height: auto;
+          background: none;
+          border: none;
+          outline: none;
+        }
+      }
+      td:first-child,
+      th:first-child {
+        padding-left: 0.5rem;
+      }
+      td {
+        border-top: solid 2px rgb(247, 247, 247);
+        color: #616161;
+        height: 3rem;
+        .action {
+          display: flex;
+          .action-btn {
+            width: auto;
+            height: auto;
+            background: none;
+            border: none;
+            outline: none;
+          }
+          .btn-payment {
+            color: rgb(19, 124, 107);
+          }
+          .btn-edit {
+            color: rgb(83, 216, 183);
+          }
+        }
+      }
+      .id-field {
+        width: 10%;
+      }
+      .cname-field {
+        width: 20%;
+      }
+      .date-field {
+        width: 15%;
+      }
+      .mpayment-field {
+        width: 15%;
+      }
+      .status-field {
+        width: 15%;
+      }
+      .cid-field {
+        width: 15%;
+      }
+      .action-field {
+        width: 10%;
+      }
+    }
+  }
+}
+
+.warranty-status {
+  width: 98vw;
+  margin-left: auto;
+  margin-right: 1vw;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  background: rgb(255, 255, 255);
+  color: #333333;
+  table {
+    margin-top: 1rem;
+    width: 100%;
+    tr {
+      width: 100%;
+      .table-header {
+        display: flex;
+
+        .sort-btn {
+          width: auto;
+          height: auto;
+          background: none;
+          border: none;
+          outline: none;
+        }
+      }
+      td:first-child,
+      th:first-child {
+        padding-left: 0.5rem;
+      }
+      td {
+        border-top: solid 2px rgb(247, 247, 247);
+        color: #616161;
+        height: 3rem;
+        .action {
+          display: flex;
+          .action-btn {
+            width: auto;
+            height: auto;
+            background: none;
+            border: none;
+            outline: none;
+          }
+          .btn-payment {
+            color: rgb(19, 124, 107);
+          }
+          .btn-edit {
+            color: rgb(83, 216, 183);
+          }
+        }
+      }
+      .id-field {
+        width: 10%;
+      }
+      .cname-field {
+        width: 20%;
+      }
+      .product-field {
+        width: 15%;
+      }
+      .date-field {
+        width: 15%;
+      }
+      .note-field {
+        width: 30%;
+      }
+      .action-field {
+        width: 10%;
+      }
+    }
+  }
+}
+
+.status-title {
+  font-size: 1rem;
+  font-family: $default-font;
+  padding-top: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+.edit-product-popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: none;
+  z-index: 16; /* Sit on top */
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.edit-product-form {
+  width: 70vw;
+  height: 85vh;
+  position: relative;
+  margin: auto;
+  background-color: rgb(202, 202, 202);
+  border-radius: 0.5rem;
+  margin-top: calc((100vh - 85vh) / 2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  .edit-form-image {
+    width: 60%;
+    height: 100%;
+    display: block;
+    white-space: nowrap;
+    img {
+      width: 80%;
+      height: auto;
+      margin-top: auto;
+      margin-bottom: auto;
+      margin: auto;
+      display: block;
+      margin-top: calc(0.5 * (85vh - 80%));
+    }
+  }
+  .edit-form-input {
+    width: 40%;
+    display: block;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    background-color: rgb(255, 255, 255);
+  }
+}
+.edit-product-container {
+  width: 85%;
+  height: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 0.5rem;
+  background: rgb(255, 255, 255);
+  button {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    font-family: $default-font;
+    border: none;
+    outline: none;
+    background: whitesmoke;
+    border-radius: 10rem;
+    color: rgb(170, 170, 170);
+  }
+  button:hover {
+    background-color: rgb(231, 156, 156);
+    color: white;
+  }
+  form {
+    margin-top: 1rem;
+    // input[type = "radio"]{
+    //     pointer-events: none;
+    // }
+    label {
+      margin-top: 0rem;
+    }
+    #pename,
+    #peprice,
+    #penumber,
+    #pesupplier,
+    #pediscount,
+    #pestatus {
+      width: 100%;
+      height: 1.8rem;
+      outline: none;
+      border: solid 1px #616161;
+      border-radius: 0.125rem;
+      color: #616161;
+    }
+    .submit-edit-btn {
+      border-radius: 0.25rem;
+      width: 45%;
+      display: block;
+      text-align: center;
+      margin-top: 1rem;
+      background: rgb(116, 216, 186);
+      border: none;
+      outline: none;
+      color: white;
+      height: 2.25rem;
+    }
+  }
+}
+
+.edit-supplier-popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: none;
+  z-index: 16; /* Sit on top */
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.edit-supplier-form {
+  width: 70vw;
+  height: 65vh;
+  position: relative;
+  margin: auto;
+  background-color: rgb(202, 202, 202);
+  border-radius: 0.5rem;
+  margin-top: calc((100vh - 65vh) / 2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  .edit-form-image {
+    width: 40%;
+    height: 100%;
+    display: block;
+    white-space: nowrap;
+    img {
+      width: 80%;
+      height: auto;
+      margin-top: auto;
+      margin-bottom: auto;
+      margin: auto;
+      display: block;
+      margin-top: calc(0.5 * (65vh - 80%));
+    }
+  }
+  .edit-form-input {
+    width: 60%;
+    display: block;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    background-color: rgb(255, 255, 255);
+  }
+}
+.edit-supplier-container {
+  width: 85%;
+  height: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  border-radius: 0.5rem;
+  background: rgb(255, 255, 255);
+  button {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    font-family: $default-font;
+    border: none;
+    outline: none;
+    background: whitesmoke;
+    border-radius: 10rem;
+    color: rgb(170, 170, 170);
+  }
+  button:hover {
+    background-color: rgb(231, 156, 156);
+    color: white;
+  }
+  form {
+    input[type="radio"] {
+      pointer-events: none;
+    }
+    label {
+      margin-top: 0.5rem;
+    }
+    #sename,
+    #seaddress,
+    #sepnumber {
+      width: 100%;
+      height: 1.8rem;
+      outline: none;
+      border: solid 1px #616161;
+      border-radius: 0.125rem;
+      color: #616161;
+    }
+    .submit-edit-btn {
+      border-radius: 0.25rem;
+      width: 45%;
+      display: block;
+      text-align: center;
+      margin-top: 2rem;
+      background: rgb(116, 216, 186);
+      border: none;
+      outline: none;
+      color: white;
+      height: 2.25rem;
+    }
+  }
+}
+
+.edit-staff-popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: none;
+  z-index: 16; /* Sit on top */
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.edit-staff-form {
+  width: 70vw;
+  height: 80vh;
+  position: relative;
+  margin: auto;
+  background-color: rgb(202, 202, 202);
+  border-radius: 0.5rem;
+  margin-top: calc((100vh - 80vh) / 2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  .edit-form-image {
+    width: 40%;
+    height: 100%;
+    display: block;
+    white-space: nowrap;
+    img {
+      width: 80%;
+      height: auto;
+      margin-top: auto;
+      margin-bottom: auto;
+      margin: auto;
+      display: block;
+      margin-top: calc(0.5 * (65vh - 80%));
+    }
+  }
+  .edit-form-input {
+    width: 60%;
+    display: block;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    background-color: rgb(255, 255, 255);
+  }
+}
+.edit-staff-container {
+  width: 85%;
+  height: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  border-radius: 0.5rem;
+  background: rgb(255, 255, 255);
+  button {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    font-family: $default-font;
+    border: none;
+    outline: none;
+    background: whitesmoke;
+    border-radius: 10rem;
+    color: rgb(170, 170, 170);
+  }
+  button:hover {
+    background-color: rgb(231, 156, 156);
+    color: white;
+  }
+  form {
+    input[type="radio"] {
+      pointer-events: none;
+    }
+    label {
+      margin-top: 0.5rem;
+    }
+    #stename,
+    #stepid,
+    #stepnumber,
+    #sterole,
+    #stestatus {
+      width: 100%;
+      height: 1.8rem;
+      outline: none;
+      border: solid 1px #616161;
+      border-radius: 0.125rem;
+      color: #616161;
+    }
+    .submit-edit-btn {
+      border-radius: 0.25rem;
+      width: 45%;
+      display: block;
+      text-align: center;
+      margin-top: 1.5rem;
+      background: rgb(116, 216, 186);
+      border: none;
+      outline: none;
+      color: white;
+      height: 2.25rem;
+    }
+  }
+}
+
+.edit-sale-popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: none;
+  z-index: 16; /* Sit on top */
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.edit-sale-form {
+  width: 70vw;
+  height: 80vh;
+  position: relative;
+  margin: auto;
+  background-color: rgb(202, 202, 202);
+  border-radius: 0.5rem;
+  margin-top: calc((100vh - 80vh) / 2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  .order-info {
+    width: 50%;
+    height: 100%;
+    display: block;
+    white-space: nowrap;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    background-color: rgb(255, 255, 255);
+  }
+  .product-list {
+    width: 50%;
+    display: block;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    background-color: rgb(255, 255, 255);
+    label {
+      margin-top: 0.5rem;
+    }
+    .product-name {
+      width: 50%;
+      padding-left: 0.5rem;
+    }
+    .order-number {
+      width: 25%;
+    }
+    .product-price,
+    .total-price {
+      width: 25%;
+    }
+    .table-header {
+      width: 95%;
+      border: solid 2px #f0f0f0;
+      border-bottom: 0px;
+    }
+    .table-footer {
+      width: 95%;
+      height: 2rem;
+      border: solid 2px #f0f0f0;
+      border-top: 0px;
+    }
+    .table-container-b {
+      width: 95%;
+      height: calc(83% - 2rem);
+      border: solid 2px #f0f0f0;
+      border-top: 0px;
+      .table-data {
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: 0.5rem;
+        td {
+          height: 2rem;
+          border-top: solid 2px #f7f7f7;
+          border-bottom: solid 2px #f7f7f7;
+        }
+      }
+    }
+  }
+}
+.edit-sale-container {
+  width: 90%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0%;
+  background: rgb(255, 255, 255);
+  button {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    font-family: $default-font;
+    border: none;
+    outline: none;
+    background: whitesmoke;
+    border-radius: 10rem;
+    color: rgb(170, 170, 170);
+  }
+  button:hover {
+    background-color: rgb(231, 156, 156);
+    color: white;
+  }
+  form {
+    input[type="radio"] {
+      pointer-events: none;
+    }
+    label {
+      margin-top: 0.5rem;
+    }
+    .subinfo-container {
+      display: flex;
+      width: 100%;
+    }
+    .order-date {
+      width: 40%;
+    }
+    .order-note {
+      width: 59%;
+      margin-left: 1%;
+      #ordernote {
+        width: 100%;
+        height: 85%;
+        display: block;
+        border-radius: 0.25rem;
+        border: solid 1px #616161;
+      }
+    }
+    #orcname,
+    #orcaddress,
+    #orcpnumber,
+    #sterole,
+    #stestatus {
+      width: 100%;
+      height: 1.8rem;
+      outline: none;
+      border: solid 1px #616161;
+      border-radius: 0.125rem;
+      color: #616161;
+    }
+    #deliverydate,
+    #orderdate,
+    #orstatus {
+      width: 100%;
+      height: 1.8rem;
+      outline: none;
+      border: solid 1px #616161;
+      border-radius: 0.125rem;
+      color: #616161;
+    }
+    .submit-edit-btn {
+      border-radius: 0.25rem;
+      width: 100%;
+      display: block;
+      text-align: center;
+      margin-top: 1.5rem;
+      background: rgb(116, 216, 186);
+      border: none;
+      outline: none;
+      color: white;
+      height: 2.25rem;
+    }
+  }
+}
+
+.edit-instal-popup {
+  position: fixed;
+  display: none;
+  left: 0;
+  top: 0;
+  z-index: 16; /* Sit on top */
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.edit-instal-form {
+  width: 70vw;
+  height: 80vh;
+  position: relative;
+  margin: auto;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0.5rem;
+  margin-top: calc((100vh - 80vh) / 2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: flex;
+  #instalcname,
+  #instalcaddress,
+  #instalcpnumber,
+  #instalPID {
+    width: 100%;
+    height: 1.8rem;
+    outline: none;
+    border: solid 1px #616161;
+    border-radius: 0.125rem;
+    color: #616161;
+  }
+  #instalddate,
+  #instalodate,
+  #instalstatus {
+    width: 100%;
+    height: 1.8rem;
+    outline: none;
+    border: solid 1px #616161;
+    border-radius: 0.125rem;
+    color: #616161;
+  }
+  .instal-info {
+    width: 50%;
+    height: 100%;
+    display: block;
+    white-space: nowrap;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    background-color: rgb(255, 255, 255);
+  }
+  .product-list {
+    width: 48%;
+    display: block;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    background-color: rgb(255, 255, 255);
+    label {
+      margin-top: 0.5rem;
+    }
+    .product-name {
+      width: 50%;
+      padding-left: 0.5rem;
+    }
+    .order-number {
+      width: 25%;
+    }
+    .product-price,
+    .total-price {
+      width: 25%;
+    }
+    .table-header {
+      width: 100%;
+      border: solid 2px #f0f0f0;
+      border-bottom: 0px;
+    }
+    .table-footer {
+      width: 100%;
+      height: 2rem;
+      border: solid 2px #f0f0f0;
+      border-top: 0px;
+    }
+    .table-container-b {
+      width: 100%;
+      height: calc(55% - 2rem);
+      border: solid 2px #f0f0f0;
+      border-top: 0px;
+      .table-data {
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: 0.5rem;
+        td {
+          height: 2rem;
+          border-top: solid 2px #f7f7f7;
+          border-bottom: solid 2px #f7f7f7;
+        }
+      }
+    }
+  }
+}
+.edit-instal-container {
+  width: 90%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0%;
+  background: rgb(255, 255, 255);
+  button {
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    font-family: $default-font;
+    border: none;
+    outline: none;
+    background: whitesmoke;
+    border-radius: 10rem;
+    color: rgb(170, 170, 170);
+  }
+  button:hover {
+    background-color: rgb(231, 156, 156);
+    color: white;
+  }
+  form {
+    input[type="radio"] {
+      pointer-events: none;
+    }
+    label {
+      margin-top: 0.5rem;
+    }
+    input[type = checkbox]{
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+    .subinfo-container {
+      display: flex;
+      width: 100%;
+    }
+    .instal-note {
+      width: 59%;
+      margin-left: 1%;
+      #instalnote {
+        width: 100%;
+        height: 85%;
+        display: block;
+        border-radius: 0.25rem;
+        border: solid 1px #616161;
+      }
+    }
+
+    .submit-edit-btn {
+      border-radius: 0.25rem;
+      width: 100%;
+      display: block;
+      text-align: center;
+      margin-top: 1.5rem;
+      background: rgb(116, 216, 186);
+      border: none;
+      outline: none;
+      color: white;
+      height: 2.25rem;
+    }
+  }
+}
+
+.setting {
+  position: fixed;
+  bottom: 1rem;
+  right: 0.5rem;
+  z-index: 15;
+  display: none;
+}
+.setting-select {
+  position: fixed;
+  display: none;
+  bottom: 4rem;
+  right: 0.5rem;
+  height: auto;
+  z-index: 16;
+  .setting-option {
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+    outline: none;
+    border: none;
+    background: #5f5b5b;
+    opacity: 0.4;
+    border-radius: 0.25rem;
+    color: white;
+  }
+  .setting-option:hover {
+    opacity: 0.8;
+  }
+}
+@keyframes show-setting {
+  from {
+    right: -6rem;
+    bottom: 4rem;
+    opacity: 0;
+  }
+  to {
+    right: 0.5rem;
+    bottom: 4rem;
+    opacity: 1;
+  }
+}
+@keyframes hide-setting {
+  from {
+    right: 0.5rem;
+    bottom: 4rem;
+    opacity: 1;
+  }
+  to {
+    right: -6rem;
+    bottom: 4rem;
+    opacity: 0;
+  }
+}
+.showsetting {
+  animation-name: show-setting;
+  animation-duration: 0.5s;
+}
+.hidesetting {
+  animation-name: hide-setting;
+  animation-duration: 0.5s;
+}
+.message-popup {
+  z-index: 17;
+  display: block;
+  position: fixed;
+  display: none;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($color: #000000, $alpha: 0.5);
+  .message {
+    overflow: hidden;
+    width: 35%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25vh;
+    border-radius: 0.5rem;
+    position: relative;
+    background: white;
+    box-sizing: border-box;
+    .title {
+      margin-top: 0;
+      font-size: 2rem;
+      text-align: center;
+      width: 100%;
+      color: rgb(97, 94, 92);
+    }
+    .icon {
+      box-sizing: border-box;
+      width: 7rem;
+      height: 7rem;
+      padding: 1rem;
+      margin-left: auto;
+      margin-right: auto;
+      i {
+        font-size: 5rem;
+        color: rgb(151, 228, 151);
+      }
+    }
+    .content {
+      color: rgb(139, 137, 131);
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .next-btn {
+      border: none;
+      outline: none;
+      width: 5rem;
+      height: 2.5rem;
+      background-color: rgb(128, 229, 236);
+      color: white;
+      font-weight: 600;
+      border-radius: 0.25rem;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+  }
+  .waiting {
+    overflow: hidden;
+    width: 35%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25vh;
+    border-radius: 0.5rem;
+    background: white;
+    box-sizing: border-box;
+    display: none;
+
+    position: relative;
+    .title {
+      margin-top: 0;
+      font-size: 2rem;
+      text-align: center;
+      width: 100%;
+      color: rgb(97, 94, 92);
+      position: absolute;
+      bottom: 2rem;
+    }
+    .gif {
+      width: 90%;
+      margin-top: -2rem;
+      margin-left: auto;
+      margin-right: auto;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

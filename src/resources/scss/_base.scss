@@ -1,0 +1,80 @@
+body{
+    overflow-x: hidden !important;
+    background: rgb(247, 247, 247);
+}
+.bg-light{
+    background: $background-color !important;
+}
+input[type=button], input[type=submit]{
+    cursor: pointer;
+}
+button{
+    cursor: pointer;
+}
+body::-webkit-scrollbar{
+    display: none;
+    scrollbar-width: 0;
+}
+button:focus{
+    outline: none;
+}
+a{
+    text-decoration: none !important;
+    color: #333333;
+}
+a:focus{
+    outline: none;
+    text-decoration: none;
+}
+.bg-primary{
+    background-color: $base-color !important;
+}
+.line{
+    margin-top: 1rem;
+    height: 2px;
+    background: #dbdbdb;
+}
+.flex{
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+}
+.small-size{
+    font-size: 1rem;
+}
+.normal-size{
+    font-size: 1.2rem !important;
+}
+.big-size{
+    font-size: 2rem !important;
+}
+.right{
+    margin-right: 2rem;
+    position: absolute;
+    right: 0.5rem;
+    bottom: -1rem;
+}
+.center{
+    width: 100vw;
+    display: block;
+    text-align: center;
+}
+.title-font{
+    font-family: 'Audiowide', cursive;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 0.5rem;
+}
+h1{
+    font-family: 'Audiowide', cursive;
+    font-size: 2rem;
+    text-align: center;
+}
+.wrong-input-message{
+    display: none;
+    margin-bottom: 0;
+    position: absolute;
+    font-size: 0.75rem;
+    color: rgb(231, 128, 128);
+}
+

@@ -1,0 +1,59 @@
+<div class="product-page">
+    <div >
+        <div class="category-banner">
+            <div >
+                <img src="{{data.Banner}}">
+            </div>
+            <div class="category-detail">
+                <h1>
+                    {{data.Title}}
+                </h1>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br>
+                    Recusandae eos rerum repellendus, ratione aperiam modi facilis saepe obcaecati 
+                    <br>doloremque fugiat, officiis magnam voluptate 
+                    <br>error quibusdam, ex impedit necessitatibus voluptatibus perferendis.
+                    <br>Lorem ipsum dolor sit  adipisicing elit. Nesciunt, inventore!
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="line"></div>
+    <h1>
+        Product
+    </h1>
+    <div class="product-container">
+        {{#each data.products}}
+        <div class="product-card" pid = "{{this._id}}"  num = "{{this.number}}">
+            <div class="product-img">
+                <img src="{{this.image}}">
+            </div>
+            <a href="#" class="product-name">
+                {{this.name}}
+            </a>
+            <p class="product-price">
+                ${{this.price}}
+            </p>
+            <button class="btn-addcart">
+                Add to cart 
+            </button>
+        </div>
+        {{/each}}
+    </div>
+    <div class="line"></div>
+    <div class="container-category">
+        <div class="brand-slider">
+            {{#each data.suppliers}}
+            <div class="product-brand">
+                <img src="{{this.image}}">
+            </div>
+            {{/each}}
+        </div>
+        <button id="pBtn" class="btn-slider">
+        <i class="fas fa-arrow-left fa-lg"></i>
+        </button>
+        <button id="nBtn" class="btn-slider">
+        <i class="fas fa-arrow-right fa-lg"></i>
+        </button>
+    </div>
+</div>

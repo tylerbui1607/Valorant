@@ -1,0 +1,571 @@
+[{
+  "_id": {
+    "$oid": "5fa8d3449fe952755d343a60"
+  },
+  "name": "HMR Bamboo Chair",
+  "image": "/img/chair.png",
+  "price": 290,
+  "type": 1,
+  "discount": 0,
+  "number": 10,
+  "orderTime": 10,
+  "supplier": 1,
+  "status": 1,
+  "createdAt": {
+    "$date": "2020-12-08T02:55:17.209Z"
+  },
+  "updatedAt": {
+    "$date": "2020-12-11T14:31:47.466Z"
+  }
+},{
+  "_id": {
+    "$oid": "5fa8e9049fe952755d343a61"
+  },
+  "name": "Coffee Table",
+  "image": "/img/table.png",
+  "price": 1000,
+  "type": 2,
+  "discount": 10,
+  "number": 5,
+  "orderTime": 6,
+  "supplier": 1,
+  "status": 1,
+  "createdAt": {
+    "$date": "2020-12-08T02:55:17.209Z"
+  },
+  "updatedAt": {
+    "$date": "2020-12-08T02:55:17.209Z"
+  }
+},{
+  "_id": {
+    "$oid": "5fad50fdf4bab990d13a09f6"
+  },
+  "name": "Modern chair",
+  "image": "/img/chair3.png",
+  "price": 400,
+  "type": 1,
+  "discount": 0,
+  "number": 1,
+  "orderTime": 0,
+  "supplier": 1,
+  "status": 1,
+  "createdAt": {
+    "$date": "2020-12-08T02:55:17.209Z"
+  },
+  "updatedAt": {
+    "$date": "2020-12-08T02:55:17.209Z"
+  }
+},{
+  "_id": {
+    "$oid": "5fad52b6f4bab990d13a09fa"
+  },
+  "name": "HR Modern chair",
+  "image": "/img/chair4.png",
+  "price": 200,
+  "type": 1,
+  "discount": 0,
+  "number": 3,
+  "orderTime": 0,
+  "supplier": 1,
+  "status": 1,
+  "createdAt": {
+    "$date": "2020-12-08T02:55:17.209Z"
+  },
+  "updatedAt": {
+    "$date": "2020-12-08T02:55:17.209Z"
+  }
+},{
+  "_id": {
+    "$oid": "5fad5320f4bab990d13a09fb"
+  },
+  "name": "Single Sofa",
+  "image": "/img/chair6.png",
+  "price": 500,
+  "type": 1,
+  "discount": 0,
+  "number": 2,
+  "orderTime": 0,
+  "supplier": 1,
+  "status": 1,
+  "createdAt": {
+    "$date": "2020-12-08T02:55:17.209Z"
+  },
+  "updatedAt": {
+    "$date": "2020-12-08T02:55:17.209Z"
+  }
+},{
+  "_id": {
+    "$oid": "5fad535ff4bab990d13a09fc"
+  },
+  "name": "Blue sofa",
+  "image": "/img/sofa.png",
+  "price": 480,
+  "type": 1,
+  "discount": 0,
+  "number": 6,
+  "orderTime": 0,
+  "supplier": 1,
+  "status": 1,
+  "createdAt": {
+    "$date": "2020-12-08T02:55:17.209Z"
+  },
+  "updatedAt": {
+    "$date": "2020-12-08T02:55:17.209Z"
+  }
+},{
+  "_id": {
+    "$oid": "5fad53e8f4bab990d13a09fd"
+  },
+  "name": "V.Modern Seat",
+  "image": "/img/seat.png",
+  "price": 400,
+  "type": 1,
+  "discount": 0,
+  "number": 9,
+  "orderTime": 0,
+  "supplier": 1,
+  "status": 1,
+  "createdAt": {
+    "$date": "2020-12-08T02:55:17.209Z"
+  },
+  "updatedAt": {
+    "$date": "2020-12-08T02:55:17.209Z"
+  }
+},{
+  "_id": {
+    "$oid": "5fad543ef4bab990d13a09fe"
+  },
+  "name": "Modern sofa",
+  "image": "/img/sofa2.png",
+  "price": 400,
+  "type": 1,
+  "discount": 0,
+  "number": 4,
+  "orderTime": 0,
+  "supplier": 1,
+  "status": 1,
+  "createdAt": {
+    "$date": "2020-12-08T02:55:17.209Z"
+  },
+  "updatedAt": {
+    "$date": "2020-12-08T02:55:17.209Z"
+  }
+},{
+  "_id": {
+    "$oid": "5fad546af4bab990d13a09ff"
+  },
+  "name": "Long sofa",
+  "image": "/img/sofa3.png",
+  "price": 400,
+  "type": 1,
+  "discount": 0,
+  "number": 1,
+  "orderTime": 5,
+  "supplier": 1,
+  "status": 1,
+  "createdAt": {
+    "$date": "2020-12-08T02:55:17.209Z"
+  },
+  "updatedAt": {
+    "$date": "2020-12-08T02:55:17.209Z"
+  }
+},{
+  "_id": {
+    "$oid": "5fad54a6f4bab990d13a0a00"
+  },
+  "name": "HR Brown sofa",
+  "image": "/img/sofa1.png",
+  "price": 400,
+  "type": 1,
+  "discount": 0,
+  "number": 5,
+  "orderTime": 0,
+  "supplier": 1,
+  "status": 1,
+  "createdAt": {
+    "$date": "2020-12-08T02:55:17.209Z"
+  },
+  "updatedAt": {
+    "$date": "2020-12-08T02:55:17.209Z"
+  }
+},{
+  "_id": {
+    "$oid": "5fad54ecf4bab990d13a0a01"
+  },
+  "name": "Himalayan salt lamp",
+  "image": "/img/salt_lamp1.png",
+  "price": 400,
+  "type": 3,
+  "discount": 0,
+  "number": 8,
+  "orderTime": 20,
+  "supplier": 1,
+  "status": 1,
+  "createdAt": {
+    "$date": "2020-12-08T02:55:17.209Z"
+  },
+  "updatedAt": {
+    "$date": "2020-12-08T02:55:17.209Z"
+  }
+},{
+  "_id": {
+    "$oid": "5fad554ff4bab990d13a0a02"
+  },
+  "name": "Cement clock",
+  "image": "/img/clock.png",
+  "price": 100,
+  "type": 3,
+  "discount": 0,
+  "number": 6,
+  "orderTime": 0,
+  "supplier": 1,
+  "status": 1,
+  "createdAt": {
+    "$date": "2020-12-08T02:55:17.209Z"
+  },
+  "updatedAt": {
+    "$date": "2020-12-08T02:55:17.209Z"
+  }
+},{
+  "_id": {
+    "$oid": "5fad5591f4bab990d13a0a03"
+  },
+  "name": "Vietnam pottery",
+  "image": "/img/decor.png",
+  "price": 600,
+  "type": 3,
+  "discount": 0,
+  "number": 6,
+  "orderTime": 5,
+  "supplier": 1,
+  "status": 1,
+  "createdAt": {
+    "$date": "2020-12-08T02:55:17.209Z"
+  },
+  "updatedAt": {
+    "$date": "2020-12-08T02:55:17.209Z"
+  }
+},{
+  "_id": {
+    "$oid": "5fad55cef4bab990d13a0a04"
+  },
+  "name": "Wall painting",
+  "image": "/img/decor3.png",
+  "price": 400,
+  "type": 3,
+  "discount": 0,
+  "number": 4,
+  "orderTime": 0,
+  "supplier": 1,
+  "status": 1,
+  "createdAt": {
+    "$date": "2020-12-08T02:55:17.209Z"
+  },
+  "updatedAt": {
+    "$date": "2020-12-08T02:55:17.209Z"
+  }
+},{
+  "_id": {
+    "$oid": "5fad571bf4bab990d13a0a05"
+  },
+  "name": "HR Modern bed",
+  "image": "/img/bed2.png",
+  "price": 400,
+  "type": 4,
+  "discount": 0,
+  "number": 3,
+  "orderTime": 0,
+  "supplier": 1,
+  "status": 1,
+  "createdAt": {
+    "$date": "2020-12-08T02:55:17.209Z"
+  },
+  "updatedAt": {
+    "$date": "2020-12-08T02:55:17.209Z"
+  }
+},{
+  "_id": {
+    "$oid": "5fad574ff4bab990d13a0a06"
+  },
+  "name": "Traditional bed",
+  "image": "/img/bed.png",
+  "price": 800,
+  "type": 4,
+  "discount": 0,
+  "number": 1,
+  "orderTime": 0,
+  "supplier": 1,
+  "status": 1,
+  "createdAt": {
+    "$date": "2020-12-08T02:55:17.209Z"
+  },
+  "updatedAt": {
+    "$date": "2020-12-08T02:55:17.209Z"
+  }
+},{
+  "_id": {
+    "$oid": "5fad586af4bab990d13a0a07"
+  },
+  "name": "HR Combo",
+  "image": "/img/combo.png",
+  "price": 600,
+  "type": 1,
+  "discount": 0,
+  "number": 7,
+  "orderTime": 0,
+  "supplier": 1,
+  "status": 1,
+  "createdAt": {
+    "$date": "2020-12-08T02:55:17.209Z"
+  },
+  "updatedAt": {
+    "$date": "2020-12-08T02:55:17.209Z"
+  }
+},{
+  "_id": {
+    "$oid": "5fad5930f4bab990d13a0a08"
+  },
+  "name": "Modern lamp",
+  "image": "/img/lamp2.png",
+  "price": 200,
+  "type": 3,
+  "discount": 0,
+  "number": 8,
+  "orderTime": 0,
+  "supplier": 1,
+  "status": 1,
+  "createdAt": {
+    "$date": "2020-12-08T02:55:17.209Z"
+  },
+  "updatedAt": {
+    "$date": "2020-12-08T02:55:17.209Z"
+  }
+},{
+  "_id": {
+    "$oid": "5fad5989f4bab990d13a0a09"
+  },
+  "name": "Val.Ceiling lamp",
+  "image": "/img/lamp3.png",
+  "price": 400,
+  "type": 3,
+  "discount": 0,
+  "number": 9,
+  "orderTime": 0,
+  "supplier": 1,
+  "status": 1,
+  "createdAt": {
+    "$date": "2020-12-08T02:55:17.209Z"
+  },
+  "updatedAt": {
+    "$date": "2020-12-08T02:55:17.209Z"
+  }
+},{
+  "_id": {
+    "$oid": "5fad59b8f4bab990d13a0a0a"
+  },
+  "name": "Wooden lamp",
+  "image": "/img/lamp4.png",
+  "price": 400,
+  "type": 3,
+  "discount": 0,
+  "number": 8,
+  "orderTime": 0,
+  "supplier": 1,
+  "status": 1,
+  "createdAt": {
+    "$date": "2020-12-08T02:55:17.209Z"
+  },
+  "updatedAt": {
+    "$date": "2020-12-08T02:55:17.209Z"
+  }
+},{
+  "_id": {
+    "$oid": "5fad5a34f4bab990d13a0a0b"
+  },
+  "name": "HR Modern lamp",
+  "image": "/img/lamp6.png",
+  "price": 400,
+  "type": 3,
+  "discount": 0,
+  "number": 5,
+  "orderTime": 0,
+  "supplier": 1,
+  "status": 1,
+  "createdAt": {
+    "$date": "2020-12-08T02:55:17.209Z"
+  },
+  "updatedAt": {
+    "$date": "2020-12-08T02:55:17.209Z"
+  }
+},{
+  "_id": {
+    "$oid": "5fad5adbf4bab990d13a0a0c"
+  },
+  "name": "Triple Ceiling lamp",
+  "image": "/img/lamp5.png",
+  "price": 800,
+  "type": 3,
+  "discount": 0,
+  "number": 3,
+  "orderTime": 0,
+  "supplier": 1,
+  "status": 1,
+  "createdAt": {
+    "$date": "2020-12-08T02:55:17.209Z"
+  },
+  "updatedAt": {
+    "$date": "2020-12-08T02:55:17.209Z"
+  }
+},{
+  "_id": {
+    "$oid": "5fad5bc8f4bab990d13a0a0d"
+  },
+  "name": "Wooden table",
+  "image": "/img/table1.png",
+  "price": 400,
+  "type": 2,
+  "discount": 0,
+  "number": 2,
+  "orderTime": 0,
+  "supplier": 1,
+  "status": 1,
+  "createdAt": {
+    "$date": "2020-12-08T02:55:17.209Z"
+  },
+  "updatedAt": {
+    "$date": "2020-12-08T02:55:17.209Z"
+  }
+},{
+  "_id": {
+    "$oid": "5fad5bfbf4bab990d13a0a0e"
+  },
+  "name": "Valorant Modern Table",
+  "image": "/img/table2.png",
+  "price": 400,
+  "type": 2,
+  "discount": 0,
+  "number": 1,
+  "orderTime": 0,
+  "supplier": 1,
+  "status": 1,
+  "createdAt": {
+    "$date": "2020-12-08T02:55:17.209Z"
+  },
+  "updatedAt": {
+    "$date": "2020-12-08T02:55:17.209Z"
+  }
+},{
+  "_id": {
+    "$oid": "5fad5c3bf4bab990d13a0a0f"
+  },
+  "name": "HR Modern table",
+  "image": "/img/table3.png",
+  "price": 400,
+  "type": 2,
+  "discount": 0,
+  "number": 6,
+  "orderTime": 0,
+  "supplier": 1,
+  "status": 1,
+  "createdAt": {
+    "$date": "2020-12-08T02:55:17.209Z"
+  },
+  "updatedAt": {
+    "$date": "2020-12-08T02:55:17.209Z"
+  }
+},{
+  "_id": {
+    "$oid": "5fad5c5bf4bab990d13a0a10"
+  },
+  "name": "Working table",
+  "image": "/img/table4.png",
+  "price": 400,
+  "type": 2,
+  "discount": 0,
+  "number": 4,
+  "orderTime": 0,
+  "supplier": 1,
+  "status": 1,
+  "createdAt": {
+    "$date": "2020-12-08T02:55:17.209Z"
+  },
+  "updatedAt": {
+    "$date": "2020-12-08T02:55:17.209Z"
+  }
+},{
+  "_id": {
+    "$oid": "5fcefe2d206e2a2d44999b49"
+  },
+  "number": 12,
+  "discount": 0,
+  "status": 1,
+  "orderTime": 0,
+  "name": "Thailand pottery",
+  "image": "/img/decor2.png",
+  "price": 120,
+  "type": 3,
+  "supplier": 7,
+  "createdAt": {
+    "$date": "2020-12-08T04:16:45.897Z"
+  },
+  "updatedAt": {
+    "$date": "2020-12-08T04:16:45.897Z"
+  }
+},{
+  "_id": {
+    "$oid": "5fcf2616267f2c230495b005"
+  },
+  "number": 12,
+  "discount": 0,
+  "status": 1,
+  "orderTime": 0,
+  "name": "China pottery ",
+  "image": "/img/decor5.png",
+  "price": 45,
+  "type": 3,
+  "supplier": 4,
+  "createdAt": {
+    "$date": "2020-12-08T07:07:02.821Z"
+  },
+  "updatedAt": {
+    "$date": "2020-12-08T07:07:02.821Z"
+  }
+},{
+  "_id": {
+    "$oid": "5fd358f3c709b23540924139"
+  },
+  "number": 1,
+  "discount": 0,
+  "status": 1,
+  "orderTime": 0,
+  "name": "Steel table",
+  "image": "/img/table5.png",
+  "price": 120,
+  "type": 2,
+  "supplier": 3,
+  "createdAt": {
+    "$date": "2020-12-11T11:33:07.531Z"
+  },
+  "updatedAt": {
+    "$date": "2020-12-11T11:33:07.531Z"
+  }
+},{
+  "_id": {
+    "$oid": "5fd89154ba45472614247d95"
+  },
+  "number": 1,
+  "discount": 0,
+  "status": 1,
+  "orderTime": 0,
+  "name": "Spearman",
+  "image": "/img/chair10.png",
+  "price": 120,
+  "type": 3,
+  "supplier": 5,
+  "createdAt": {
+    "$date": "2020-12-15T10:35:00.060Z"
+  },
+  "updatedAt": {
+    "$date": "2020-12-15T10:35:00.060Z"
+  }
+}]
